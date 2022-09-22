@@ -146,12 +146,26 @@ h1,h4 {
     
 } */
 
-.ruler {
-    top: 24.9%;
-    position: absolute;
-    z-index: 5;
-    width: 3.6% !important;
-    height: 250px !important;
+/* Ruler */
+@media only screen 
+and (max-width: 1190px) {
+    .ruler {
+            top: 17%;
+            position: absolute;
+            z-index: 5;
+            width: 4% !important;
+            height: 22% !important;
+        }
+}
+
+@media only screen and (min-width: 1270px) {
+    .ruler {
+            top: 23%;
+            position: absolute;
+            z-index: 5;
+            width: 3.6% !important;
+            height: 33% !important;
+        }
 }
 
 .green1{
