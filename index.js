@@ -5,8 +5,9 @@ var ipad=0;
 
 if($(window).width()<=1180){
     ipad=1;
+    $(".c")
 }
-
+ 
 
 $(".r0").draggable({containment:".restrict",stop:function(){
     $(".r0").css({"top":"24.9%","left":"18.6%"});
@@ -27,6 +28,23 @@ $(".instill").on("click",function(){
     }
     instill();
     $(".instill").attr('disabled','disabled');
+})
+
+$("body").on("click",function(){
+    cot=0,tor=0;
+    $("body").css('cursor','initial');
+})
+
+$(".cot").on("click",function(event){
+    event.stopPropagation();
+    cot=1;tor=0;
+    $("body").css('cursor','url("cal rabbit/Images/blueball.png"),auto'); 
+})
+
+$(".tor").on("click",function(event){
+    event.stopPropagation();
+    tor=1;cot=0;
+    $("body").css('cursor','url("cal rabbit/Images/torch.png"),auto');  
 })
 
 function instill(){
