@@ -38,13 +38,13 @@ $("body").on("click",function(){
 $(".cot").on("click",function(event){
     event.stopPropagation();
     cot=1;tor=0;
-    $("body").css('cursor','url("cal rabbit/Images/blueball.png"),auto'); 
+    $("body").css('cursor','url("Images/blueball.png"),auto'); 
 })
 
 $(".tor").on("click",function(event){
     event.stopPropagation();
     tor=1;cot=0;
-    $("body").css('cursor','url("cal rabbit/Images/torch.png"),auto');  
+    $("body").css('cursor','url("Images/torch.png"),auto');  
 })
 
 function instill(){
