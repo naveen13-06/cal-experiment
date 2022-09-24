@@ -1,6 +1,12 @@
 var instilled=0;
 var rabbit=1;
 var n,cot,tor,img,drug,rdm=0;
+var ipad=0;
+
+if($(window).width()<=1180){
+    ipad=1;
+}
+
 
 $(".r0").draggable({containment:".restrict",stop:function(){
     $(".r0").css({"top":"24.9%","left":"18.6%"});
@@ -67,27 +73,6 @@ function instill(){
     $("#right-eye").attr("src",img);
     $(".saline").html("Saline");
 }
-
-$("body").on("click",function(){
-    cot=0,tor=0;
-    $("body").css('cursor','initial');
-    $("#box").css({"display":"none"});
-
-})
-
-$(".cot").on("click",function(event){
-    event.stopPropagation();
-    cot=1;
-    tor=0;
-    $("body").css('cursor','url("Images/blueball.png"),auto'); 
-})
-
-$(".tor").on("click",function(event){
-    event.stopPropagation();
-    tor=1;
-    cot=0;
-    $("body").css('cursor','url("Images/torch.png"),auto');  
-})
 
 $("#inv1").mouseover(function(){
     if((tor||cot)&&instilled){
