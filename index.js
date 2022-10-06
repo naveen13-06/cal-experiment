@@ -5,17 +5,13 @@ var ipad=0;
 
 if($(window).width()<=1180){
     ipad=1;
-    $(".c")
+    // $("#cotton").attr("draggable","true");
 }
+
+
+$(".r0").draggable({containment:".restrict",revert:true});
  
-
-$(".r0").draggable({containment:".restrict",stop:function(){
-    $(".r0").css({"top":"24.9%","left":"18.6%"});
-}});
-
-$(".r1").draggable({containment:".restrict1",stop:function(){
-    $(".r1").css({"top":"24.9%","left":"78%"});
-}});
+$(".r1").draggable({containment:".restrict1",revert:true});
 
 $(".instill").on("click",function(){
     instilled=1;
@@ -31,20 +27,39 @@ $(".instill").on("click",function(){
 })
 
 $("body").on("click",function(){
-    cot=0,tor=0;
     $("body").css('cursor','initial');
+    if(ipad){
+        $("#highlight1").removeClass('selected');
+        $("#highlight2").removeClass('selected');
+    }
+    cot=0,tor=0;
 })
+
 
 $(".cot").on("click",function(event){
     event.stopPropagation();
     cot=1;tor=0;
-    $("body").css('cursor','url("Images/blueball.png"),auto'); 
+    $("body").css('cursor','url("Images/blueball.png"),auto');
 })
 
 $(".tor").on("click",function(event){
     event.stopPropagation();
     tor=1;cot=0;
-    $("body").css('cursor','url("Images/torch.png"),auto');  
+    $("body").css('cursor','url("Images/torch.png"),auto'); 
+})
+
+$("#inv1").on("click",function(event){
+    if(ipad){
+        event.stopPropagation();
+        $("#highlight1").addClass('selected');
+    }  
+})
+
+$("#inv2").on("click",function(event){
+    if(ipad){
+        event.stopPropagation();
+        $("#highlight2").addClass('selected');
+    }  
 })
 
 function instill(){
@@ -159,7 +174,8 @@ $("#inv1").mouseover(function(){
         else if(cot){
             $("#right-eye").attr("src","Images/closed-eye.jpg");
         }
-    } 
+    }
+   
     //tor=0;cot=0;
 });
 
@@ -242,3 +258,4 @@ $("#inv2").mouseout(function(){
 $("#box").on("click",function(){
     event.stopPropagation();
 })
+

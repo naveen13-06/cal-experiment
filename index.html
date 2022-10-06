@@ -64,8 +64,8 @@
                         <img src="Images/eyes-before.png" alt="" id="left-eye">
                         <!-- <div id="circle"></div> -->
                     </div>
-                    <div class="col boxed Image-container">
-                        <img src="Images/rabbit-left-eye.png" alt="">
+                    <div class="col boxed Image-container ">
+                        <img src="Images/rabbit-left-eye.png" alt="" id="highlight2">
                         <div id="inv2"></div>
                     </div>
 
@@ -92,13 +92,14 @@
                     </div>
                 </div>
             </div>
+            
             <!-- Right rabbit eye -->
             <div class="col-4">
                 <div class="row boxed restrict1">
                     <h4>Right Eye (Test)</h4>
                     <div class="col boxed Image-container">
-                        <img src="Images/rabbit-right-eye.png" alt="" >
-                        <div id="inv1" ></div>
+                        <img src="Images/rabbit-right-eye.png" alt="" id="highlight1" >
+                        <div id="inv1"></div>
                     </div>
                     
                     <div class="col boxed Image-container">
@@ -152,7 +153,7 @@
                 <button type="button" class="instill btn btn-success">Instill</button>
             </div>
             <div class="col-2 mid2">
-                <div class="row btn-group" role=""group>
+                <div class="row btn-group" id="wrapper" role=""group>
                     <!-- Torch -->
                     <div class="col torch-card">
                         <button  class="btn tor"><span id="torch">🔦</span></button>
@@ -160,8 +161,9 @@
                     </div>
                     <!-- Cotton -->
                     <div class="col cotton-card">
-                        <button class="btn cot"><span id="cotton">🧽</span></button>
+                        <button class="btn cot"><span id="cotton" draggable="true">🧽</span></button>
                         <!-- <p>Cotton Swab</p> -->
+                        
                     </div>
                 </div>
             </div>
@@ -184,7 +186,7 @@
     
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
     <script src="jquery.ui.touch-punch.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     
     

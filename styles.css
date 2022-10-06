@@ -124,6 +124,7 @@ h1,h4 {
 
 #cotton {
     font-size: 50px;
+    touch-action: none;
 }
 
 .torch-card p{
@@ -213,3 +214,8 @@ select option:checked{
 .check{
     margin-top: 5%;
 }
+
+.selected{
+    box-shadow:0px 12px 22px 1px #198754;
+ }
+
