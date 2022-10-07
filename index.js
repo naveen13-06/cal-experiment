@@ -28,7 +28,7 @@ $(".instill").on("click",function(){
 $("html").on("click",function(){
     $("body").css('cursor','initial');
     if(ipad){
-        $("#highlight1").removeClass('selected')
+        $("#highlight1").removeClass('selected');
         $("#highlight2").removeClass('selected');
     }
     cot=0,tor=0;
@@ -39,12 +39,16 @@ $(".cot").on("click",function(event){
     event.stopPropagation();
     cot=1;tor=0;
     $("body").css('cursor','url("Images/blueball.png"),auto');
+    $("#highlight1").removeClass('selected');
+    $("#highlight2").removeClass('selected');
 })
 
 $(".tor").on("click",function(event){
     event.stopPropagation();
     tor=1;cot=0;
     $("body").css('cursor','url("Images/torch.png"),auto'); 
+    $("#highlight1").removeClass('selected');
+    $("#highlight2").removeClass('selected');
 })
 
 $("#inv1").on("click",function(event){
