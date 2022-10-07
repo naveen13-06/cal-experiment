@@ -3,7 +3,7 @@ var rabbit=1;
 var n,cot,tor,img,drug,rdm=0;
 var ipad=0;
 
-if($(window).width()<=1180){
+if($(window).width()<=1366){
     ipad=1;
     // $("#cotton").attr("draggable","true");
 }
