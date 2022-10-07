@@ -148,16 +148,6 @@ h1,h4 {
 } */
 
 /* Ruler */
-@media only screen 
-and (max-width: 1190px) {
-    .ruler {
-            top: 17%;
-            position: absolute;
-            z-index: 5;
-            width: 4% !important;
-            height: 22% !important;
-        }
-}
 
 @media only screen and (min-width: 1270px) {
     .ruler {
@@ -167,6 +157,50 @@ and (max-width: 1190px) {
             width: 3.6% !important;
             height: 33% !important;
         }
+}
+
+/* for ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .ruler {
+        top: 21%;
+        position: absolute;
+        z-index: 5;
+        width: 4% !important;
+        height: 18% !important;
+    }
+}
+
+/* for ipad pro */
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .ruler {
+        top: 19.5%;
+        position: absolute;
+        z-index: 5;
+        width: 4% !important;
+        height: 22% !important;
+    }
+}
+
+/* for ipad pro 12.9' */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .ruler {
+        top: 16%;
+        position: absolute;
+        z-index: 5;
+        width: 4% !important;
+        height: 22% !important;
+    }
+}
+
+/* ipad air */
+@media only screen and (min-device-width: 1180px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .ruler {
+        top: 19.5%;
+        position: absolute;
+        z-index: 5;
+        width: 4% !important;
+        height: 22% !important;
+    }
 }
 
 .green1{

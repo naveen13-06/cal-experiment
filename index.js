@@ -8,7 +8,7 @@ if($(window).width()<=1180){
     // $("#cotton").attr("draggable","true");
 }
 
-
+ 
 $(".r0").draggable({containment:".restrict",revert:true});
  
 $(".r1").draggable({containment:".restrict1",revert:true});
@@ -29,7 +29,7 @@ $(".instill").on("click",function(){
 $("body").on("click",function(){
     $("body").css('cursor','initial');
     if(ipad){
-        $("#highlight1").removeClass('selected');
+        $("#highlight1").removeClass('selected')
         $("#highlight2").removeClass('selected');
     }
     cot=0,tor=0;
