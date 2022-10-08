@@ -52,14 +52,14 @@ $(".tor").on("click",function(event){
 })
 
 $("#inv1").on("click",function(event){
-    if(ipad){
+    if(ipad && cot||tor){
         event.stopPropagation();
         $("#highlight1").addClass('selected');
     }  
 })
 
 $("#inv2").on("click",function(event){
-    if(ipad){
+    if(ipad && cot||tor){
         event.stopPropagation();
         $("#highlight2").addClass('selected');
     }  
